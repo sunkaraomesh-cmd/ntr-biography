@@ -3,23 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef1f5;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #bbb;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            border-radius: 6px;
+            border: 1px solid #777;
+            font-size: 16px;
+        }
+        button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005da8;
+        }
+        label {
+            margin-right: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <form action="./login.html">
-        <input type="text/" placeholder="Enter name"/><br>
-        <input type="email/" placeholder="Enter email"/><br>
-        <input type="password/" placeholder="Enter password"/><br>
-        <input type="confirm password/" placeholder="Enter confirm password"/ ><br>
-        <input type="mobile number/" placeholder="10 digits only"/><br>
-        <input type="radio" name="gender"/> male
-        <input type="radio" name="gender"/> Female <br>
-        <input type="checkbox"/>10th
-        <input type="checkbox"/>Inter
-        <input type="checkbox"/>Diploma
-        <input type="checkbox"/>BTech <br>
-        <input type="file"/><br><br>    
-        <button>register</button>
+        <input type="text" placeholder="Enter name"/><br>
+        <input type="email" placeholder="Enter email"/><br>
+        <input type="password" placeholder="Enter password"/><br>
+        <input type="password" placeholder="Enter confirm password"/><br>
+        <input type="tel" placeholder="10 digits only" maxlength="10"/><br>
+
+        <label><input type="radio" name="gender"/> Male</label>
+        <label><input type="radio" name="gender"/> Female</label><br><br>
+
+        <label><input type="checkbox"/>10th</label>
+        <label><input type="checkbox"/>Inter</label>
+        <label><input type="checkbox"/>Diploma</label>
+        <label><input type="checkbox"/>BTech</label><br><br>
+
+        <input type="file"/><br>
+        <button>Register</button>
     </form>
 </body>
 </html>
